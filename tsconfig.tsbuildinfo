@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/useismobile.ts","./src/vite-env.d.ts","./src/app.vue","./src/components/controlcenter.vue","./src/components/gamecontrols.vue","./src/components/header.vue","./src/components/matchwinner.vue","./src/components/newgame.vue","./src/components/scoreboard.vue","./src/components/scoreplayer.vue","./src/components/scoreservice.vue"],"version":"5.8.3"}

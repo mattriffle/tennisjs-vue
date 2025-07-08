@@ -8,6 +8,8 @@
 
 A Vue 3 application that uses the [tennisjs](https://github.com/mattriffle/tennisjs) package to keep score in a tennis match.
 
+See it in action at https://tennisjs.org
+
 ## Project Setup
 
 ```sh

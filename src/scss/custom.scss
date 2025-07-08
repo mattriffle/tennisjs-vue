@@ -1,0 +1,12 @@
+@import "../../node_modules/bootstrap/scss/functions";
+
+$primary: #006400; // Dark Green
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/_mixins.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.table thead {
+  background-color: $primary;
+  color: white;
+}

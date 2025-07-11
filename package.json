@@ -12,7 +12,7 @@
     "bootstrap": "^5.3.7",
     "mitt": "^3.0.1",
     "pinia": "^3.0.3",
-    "tennisjs": "^2.0.1",
+    "tennisjs": "^2.0.2",
     "unplugin-vue-components": "^28.8.0",
     "vue": "^3.5.17"
   },

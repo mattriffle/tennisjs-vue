@@ -11,10 +11,12 @@ node_modules
 dist
 dist-ssr
 *.local
+tsconfig.tsbuildinfo
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+.kilocode/*
 .idea
 .DS_Store
 *.suo

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
+    "bootstrap-icons": "^1.13.1",
     "mitt": "^3.0.1",
     "pinia": "^3.0.3",
     "tennisjs": "^2.0.2",

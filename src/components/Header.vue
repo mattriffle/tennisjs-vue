@@ -1,18 +1,20 @@
 <template>
   <header class="p-3 bg-light border-bottom">
-    <div class="container d-flex justify-content-between align-items-center">
-      <img alt="logo" src="../assets/tennisjs.png" style="height: 40px" />
-      <a
-        href="https://github.com/mattriffle/tennisjs-vue"
-        target="_blank"
-        class="btn btn-primary"
-        >View On Github</a
-      >
+    <div class="container d-flex justify-content-center align-items-center">
+      <img alt="logo" src="../assets/tennisjs.png" :style="logoHeight" />
     </div>
   </header>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { computed } from "vue";
+import { useIsMobile } from "../useIsMobile";
+const { isMobile } = useIsMobile();
+
+const logoHeight = computed(() => ({
+  height: isMobile.value ? "50px" : "100px",
+}));
+</script>
 
 <style scoped>
 header {

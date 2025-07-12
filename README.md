@@ -1,10 +1,10 @@
-<p align="center">
+<p>
   <a href="https://github.com/mattriffle/tennisjs-vue">
-    <img src="https://raw.githubusercontent.com/mattriffle/tennisjs-vue/main/src/assets/tennisjs.png" alt="tennisjs-vue logo" width="200"/>
+    <img src="https://raw.githubusercontent.com/mattriffle/tennisjs-vue/main/src/assets/tennisjs.png" alt="tennisjs logo" width="200"/>
   </a>
 </p>
 
-# tennisjs-vue
+## TennisJS Vue
 
 A Vue 3 application that uses the [tennisjs](https://github.com/mattriffle/tennisjs) package to keep score in a tennis match.
 

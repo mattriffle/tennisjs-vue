@@ -12,7 +12,7 @@ const getStatsContent = (playerNum: 1 | 2) => {
     playerNum === 1 ? props.summary.player1.stats : props.summary.player2.stats;
   const opponentStats =
     playerNum === 1 ? props.summary.player2.stats : props.summary.player1.stats;
-  return `Aces: ${playerStats.ace}<br>Service Winners: ${playerStats.service_winner}<br>Return Winners: ${playerStats.return_winner}<br>Other Winners: ${playerStats.winner}<br>Unforced Errors: ${opponentStats.unforced_error}`;
+  return `Aces: ${playerStats.ace}<br>Service Winners: ${playerStats.service_winner}<br>Return Winners: ${playerStats.return_winner}<br>Other Winners: ${playerStats.winner}<br>Unforced Errors: ${opponentStats.unforced_error}<br>Double Faults: ${opponentStats.double_fault}`;
 };
 </script>
 

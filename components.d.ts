@@ -11,6 +11,7 @@ declare module 'vue' {
     ControlCenter: typeof import('./src/components/ControlCenter.vue')['default']
     GameControls: typeof import('./src/components/GameControls.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
+    MatchTranscript: typeof import('./src/components/MatchTranscript.vue')['default']
     MatchWinner: typeof import('./src/components/MatchWinner.vue')['default']
     NewGame: typeof import('./src/components/NewGame.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
@@ -18,5 +19,6 @@ declare module 'vue' {
     ScoreBoard: typeof import('./src/components/ScoreBoard.vue')['default']
     ScorePlayer: typeof import('./src/components/ScorePlayer.vue')['default']
     ScoreService: typeof import('./src/components/ScoreService.vue')['default']
+    ThemeSelector: typeof import('./src/components/ThemeSelector.vue')['default']
   }
 }

@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import ControlCenter from "./components/ControlCenter.vue";
 import Header from "./components/Header.vue";
+import { onMounted } from "vue";
+import { useTheme } from "./composables/useTheme";
+
+const { loadTheme } = useTheme();
+
+onMounted(() => {
+  loadTheme();
+});
 </script>
 
 <template>

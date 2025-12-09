@@ -24,3 +24,5 @@ tsconfig.tsbuildinfo
 *.njsproj
 *.sln
 *.sw?
+*.md
+!README.md

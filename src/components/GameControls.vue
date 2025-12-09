@@ -74,20 +74,6 @@ onUnmounted(() => {
         </table>
       </div>
     </div>
-    <div
-      class="text-center text-muted mt-2"
-      :class="{ small: !isMobile, 'x-small': isMobile }"
-    >
-      Copyright 2023-{{ currentYear }} Matt Riffle. Available Under The MIT
-      License
-      <p />
-      <a
-        href="https://github.com/mattriffle/tennisjs-vue"
-        target="_blank"
-        class="btn btn-outline-primary"
-        >View On <i class="bi-github"></i>
-      </a>
-    </div>
   </div>
 </template>
 

@@ -1,12 +1,179 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
-$primary: #006400; // Dark Green
+$primary: #006400; // Fallback
 
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/_mixins.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+:root {
+  --primary-color: #006400;
+}
+
 .table thead {
-  background-color: $primary;
+  background-color: var(--primary-color) !important;
   color: white;
+}
+
+.btn-primary,
+.bg-primary,
+.text-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.text-primary {
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+  border: none !important;
+}
+
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+
+  &:hover,
+  &:active,
+  &.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+  }
+}
+
+.btn-check:checked + .btn-outline-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+// Night Mode Overrides
+[data-night="true"] {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  // Dim the header slightly in night mode while keeping it visible
+  header.bg-light {
+    filter: brightness(0.5);
+  }
+
+  .card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-color: #333;
+
+    // Ensure card header keeps the theme color
+    .card-header.bg-primary {
+      background-color: var(--primary-color) !important;
+      color: white !important;
+    }
+  }
+
+  .table {
+    color: #e0e0e0;
+    background-color: #1e1e1e;
+
+    td,
+    th {
+      border-color: #333;
+      background-color: #1e1e1e;
+      color: #e0e0e0 !important;
+    }
+
+    tbody {
+      background-color: #1e1e1e;
+    }
+  }
+
+  .form-control,
+  .form-select {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .text-muted {
+    color: #aaaaaa !important;
+  }
+
+  .theme-selector-popup {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+
+    .card-title {
+      color: #e0e0e0;
+    }
+
+    .form-label {
+      color: #e0e0e0;
+    }
+
+    .form-check-label {
+      color: #e0e0e0;
+    }
+  }
+
+  // Accordion overrides for transcript
+  .accordion-item {
+    background-color: #1e1e1e;
+    border-color: #333;
+  }
+
+  .accordion-button {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+
+    &::after {
+      filter: invert(1);
+    }
+
+    &:not(.collapsed) {
+      background-color: #333 !important;
+    }
+  }
+
+  .accordion-body {
+    background-color: #1e1e1e;
+  }
+
+  // Light background utilities
+  .bg-light {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+  }
+
+  .bg-light-subtle {
+    background-color: rgba(45, 45, 45, 0.8) !important;
+    color: #e0e0e0 !important;
+  }
+
+  // Game block headers in transcript
+  .game-block .fw-bold {
+    color: #e0e0e0 !important;
+  }
+
+  // Card header with bg-light
+  .card-header.bg-light {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+  }
+}
+
+// Global Theme Overrides for specific elements
+.stats-link {
+  color: var(--primary-color) !important;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+  }
 }

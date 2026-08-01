@@ -25,4 +25,6 @@ tsconfig.tsbuildinfo
 *.sln
 *.sw?
 *.md
+!openwiki/*.md
 !README.md
+!SECURITY.md
